@@ -13,7 +13,7 @@ body {
 
 .container {
   position: relative;
-  top: 300px;
+  top: 50px;
 }
 .cup {
   position: relative;
@@ -56,7 +56,7 @@ body {
 .handle {
   position: absolute;
   right: -70px;
-  top: 30px;
+  top: 40px;
   width: 160px;
   height: 180px;
   border: 25px solid #d9d9d9;
@@ -64,4 +64,38 @@ body {
   border-bottom: 25px solid transparent;
   border-radius: 50%;
   transform: rotate(42deg);
+}
+
+.plate {
+  position: relative;
+  bottom: -50%;
+  left: 30%;
+  transform: translatex(-50%);
+  width: 500px;
+  height: 200px;
+  background: linear-gradient(to right, #f9f9f9, #e7e7e7);
+  border-radius: 50%;
+  box-shadow: 0 35px 35px rgba(0, 0, 0, 0.2);
+}
+
+.plate::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+  background: linear-gradient(to left, #f9f9f9, #e7e7e7e7);
+}
+.plate::after {
+  content: "";
+  position: relative;
+  top: 30px;
+  left: 30px;
+  right: 300px;
+  bottom: 30px;
+  border-radius: 50%;
+  background: radial-gradient(rgba(0, 0, 0, 0.2) 25%, transparent);
+  border-radius: 50%;
 }
